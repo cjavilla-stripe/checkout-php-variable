@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stripe Payment Page Sample</title>
+    <link href="https://stripe-samples.github.io/developer-office-hours/demo.css" rel="stylesheet" type="text/css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+    div.field {
+      padding: 8px 15px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="container">
+        <div id="panel">
+          <h1>Donations Welcome</h1>
+          <div class="field">
+            <label for="cause">Cause</label>
+            <select id="cause">
+              <option value="cause-a">cause a</option>
+              <option value="cause-b">cause b</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select class="field" id="currency">
+              <option value="cad">CAD</option>
+              <option value="eur">EUR</option>
+              <option value="usd">USD</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="amount">Amount to donate</label>
+            <input type="number" id="amount" step="0.01" value="5.00">
+          </div>
+
+          <div class="field">
+            <button type="submit" id="btn">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="donate.js" charset="utf-8"></script>
+  </body>
+</html>
